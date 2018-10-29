@@ -56,9 +56,9 @@ if won?(board)
   inprogress = won?(board)
   i = inprogress[0]
   if board[i] == "X"
-    "X Wins!"
+    "X"
   elsif board[i] == "O"
-      "O Wins!"
+      "O"
   end
 else return nil
 end
