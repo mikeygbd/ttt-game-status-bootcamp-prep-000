@@ -46,7 +46,18 @@ end
 
 def over?(board)
 if won?(board) || full?(board)
-  
+
   return true
+  end
+end
+
+def winner(board)
+if won?(board)
+  inprogress = won?(board)
+  i = inprogress[0]
+  if board[i] == "X"
+    "X Wins!"
+    if board[i] == "O"
+      "O Wins!"
   end
 end
