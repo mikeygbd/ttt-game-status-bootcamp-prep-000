@@ -40,7 +40,7 @@ board.all? do |inprogress|
 end
 def draw?(board)
 if won?(board) == false && full?(board) == true
-else return false
+ return true
 end
 
 end
