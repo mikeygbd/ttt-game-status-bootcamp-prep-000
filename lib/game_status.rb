@@ -49,5 +49,5 @@ if won?(board)
   full?(board)
   draw?(board)
   return true
-end
+  end
 end
