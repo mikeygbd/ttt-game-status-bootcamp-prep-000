@@ -28,13 +28,17 @@ WIN_COMBINATIONS.each do |combination|
 return combination
 elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
 return combination
+    end
   end
-end
 false
 end
 
 def full?(board)
 board.all? do |inprogress|
   inprogress == "X" || inprogress == "O"
-end 
+  end 
+end
+def draw?(board)
+if won?(board) == false && full?(board) == true
+end
 end
