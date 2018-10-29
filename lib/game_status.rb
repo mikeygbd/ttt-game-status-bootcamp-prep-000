@@ -36,7 +36,7 @@ end
 def full?(board)
 board.all? do |inprogress|
   inprogress == "X" || inprogress == "O"
-  end 
+  end
 end
 def draw?(board)
 if won?(board) == false && full?(board) == true
