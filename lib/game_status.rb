@@ -57,7 +57,8 @@ if won?(board)
   i = inprogress[0]
   if board[i] == "X"
     "X Wins!"
-    if board[i] == "O"
+  elsif board[i] == "O"
       "O Wins!"
   end
+else return nil
 end
